@@ -35,3 +35,5 @@ int firstNonRepeatingCharacter(string string)
    }
    return -1;
 }
+// Time: O(n)
+// Space: O(1)
