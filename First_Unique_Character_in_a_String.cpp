@@ -3,7 +3,6 @@
 #include <unordered_map>
 using namespace std;
 
-
 /* 
  First Unique Character in a String
 
@@ -33,5 +32,5 @@ int firstNonRepeatingCharacter(string string)
    }
    return -1;
 }
-// Time: O(n)
-// Space: O(1)
+
+// Time: O(n)   Space: O(1)
