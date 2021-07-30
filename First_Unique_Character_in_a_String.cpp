@@ -12,8 +12,6 @@ using namespace std;
  firstNonRepeatingCharacter("abcdacf"); ==> 1 // pos of 'b'
 */
 
-
-
 int firstNonRepeatingCharacter(string string) 
 {
   unordered_map<char,int> charFreq;
