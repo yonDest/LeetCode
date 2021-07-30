@@ -9,22 +9,25 @@ using namespace std;
 
  firstNonRepeatingCharacter("abcdacf"); ==> 1 // pos of 'b'
 */
-int firstNonRepeatingCharacter(string string) {
+int firstNonRepeatingCharacter(string string) 
+{
   unordered_map<char,int> charFreq;
 	
-	for(int i = 0; i < string.length(); i++){
-		if(charFreq.count(string[i]) == 0)
-			// create instance
-			charFreq.insert(make_pair(string[i],1));
-		else
-			// count instance freq
-			charFreq[string[i]]++;
-	}
-	for(int i = 0; i < string.length(); i++){
-		char c = string[i];
-		if(charFreq[c] < 2){
-			return i;
-		}
-	}
-  return -1;
+  for(int i = 0; i < string.length(); i++)
+  {
+	if(charFreq.count(string[i]) == 0)
+	  // create instance
+	  charFreq.insert(make_pair(string[i],1));
+	else
+	  // count instance freq
+	  charFreq[string[i]]++;
+	 }
+   for(int i = 0; i < string.length(); i++)
+   {
+	char c = string[i];
+	if(charFreq[c] < 2)
+	   return i;
+		
+   }
+   return -1;
 }
