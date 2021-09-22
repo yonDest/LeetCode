@@ -1,2 +1,2 @@
 # LeetCode - Q's
-Collection of LeetCode questions to ace my coding interview!
+Collection of LeetCode questions to ace my coding interviews!
